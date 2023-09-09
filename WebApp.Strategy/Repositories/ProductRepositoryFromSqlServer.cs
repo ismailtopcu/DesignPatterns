@@ -1,5 +1,4 @@
-﻿using BaseProject.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver.Linq;
 using System;
 using System.Collections.Generic;

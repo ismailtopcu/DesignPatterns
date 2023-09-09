@@ -1,4 +1,4 @@
-﻿using WebApp.Strategy.Models;
+﻿using WebApp.Template.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
