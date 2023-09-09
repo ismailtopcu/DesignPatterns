@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BaseProject
+namespace WebApp.Template
 {
     public class Program
     {
@@ -29,11 +29,11 @@ namespace BaseProject
 
             if (!userManager.Users.Any())
             {
-                userManager.CreateAsync(new AppUser() { UserName = "user1", Email = "user1@gmail.com" }, "Password12*").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "user2", Email = "user2@gmail.com" }, "Password12*").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "user3", Email = "user3@gmail.com" }, "Password12*").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "user4", Email = "user4@gmail.com" }, "Password12*").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "user5", Email = "user5@gmail.com" }, "Password12*").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "user1", Email = "user1@gmail.com", PictureUrl = "/userpictures/primeuserpicture.png", Description = "Lorem ipsum" }, "Password12*").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "user2", Email = "user2@gmail.com", PictureUrl = "/userpictures/primeuserpicture.png", Description = "Lorem ipsum" }, "Password12*").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "user3", Email = "user3@gmail.com", PictureUrl = "/userpictures/primeuserpicture.png", Description = "Lorem ipsum" }, "Password12*").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "user4", Email = "user4@gmail.com", PictureUrl = "/userpictures/primeuserpicture.png", Description = "Lorem ipsum" }, "Password12*").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "user5", Email = "user5@gmail.com", PictureUrl = "/userpictures/primeuserpicture.png", Description = "Lorem ipsum" }, "Password12*").Wait();
             }
 
             host.Run();
